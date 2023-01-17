@@ -19,16 +19,16 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-22.04, ubuntu-20.04]
-        version: [10, 12, 14]
+        #version: [10, 12, 14]
     runs-on: ${{ matrix.os }}
-    steps:
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.version }}
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: ${{ matrix.version }}
+#   # This workflow contains a single job called "build"
+#   build:
+#     # The type of runner that the job will run on
+#     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
